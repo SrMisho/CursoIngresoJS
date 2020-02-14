@@ -13,7 +13,7 @@ function mostrar()
 	} else if (numero >= 4) {
 		alert ("Aprobo.");
 	} else {
-		alert ("Vamos, la proxima se puede.")
+		alert ("Vamos, la proxima se puede.");
 	}
 
 }//FIN DE LA FUNCIÓN
