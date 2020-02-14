@@ -9,11 +9,11 @@ function mostrar()
 	numero = Math.floor(Math.random() * ((maximo + 1) - minimo) + minimo);
 
 	if (numero >= 9) {
-		alert ("Excelente.");
+		alert ("Excelente. Nota: " + numero);
 	} else if (numero >= 4) {
-		alert ("Aprobo.");
+		alert ("Aprobo. Nota: " + numero);
 	} else {
-		alert ("Vamos, la proxima se puede.");
+		alert ("Vamos, la proxima se puede. Nota: " + numero);
 	}
 
 }//FIN DE LA FUNCIÓN
