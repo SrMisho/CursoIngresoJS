@@ -15,7 +15,7 @@ largo = parseInt(document.getElementById("Largo").value);
 ancho = parseInt(document.getElementById("Ancho").value);
 cantidad = (largo + ancho) * 2;
 total = cantidad * 3;
-alert("La cantidad necesaria para el terreno es: " + total);
+alert("La cantidad necesaria para el terreno es: " + total + " metros de alambre.");
 }
 function Circulo () 
 {
@@ -29,10 +29,23 @@ function Circulo ()
     circuferencia = diametro * 3.14;
     total = circuferencia * 3;
 
-    alert("La cantidad necesaria para el terreno es: " + total);
+    alert("La cantidad necesaria para el terreno es: " + total + " metros de alambre.");
 
 }
 function Materiales () 
 {
-	
+    var largo;
+    var ancho;
+    var superficie;
+    var cal;
+    var cemento;
+    largo = parseInt(document.getElementById("Largo").value);
+    ancho = parseInt(document.getElementById("Ancho").value);
+    superficie = largo * ancho;
+    cal = superficie * 3;
+    cemento = superficie * 2;
+
+    alert("Se necesitan " + cemento + " bolsas de cemento y " + cal + " de cal.")
+
+
 }
