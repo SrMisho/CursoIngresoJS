@@ -1,10 +1,13 @@
 function mostrar()
 {
 var nota;
+var notabaja = 0;
+var sexobajo;
 var sexo;
+var varones = 0;
 var acunotas = 0;
 var promedio;
-var alumnos = 0;
+var flag = 0;
 
 for (var k = 0; k < 5; k++) {
    nota = parseInt(prompt("Ingrese su nota."));
@@ -16,6 +19,19 @@ for (var k = 0; k < 5; k++) {
         sexo = prompt("Sexo invalido. Ingrese su sexo (m o f)").toLowerCase();
     }
 acunotas = acunotas + nota;
+if (notabaja > nota || flag == 0) {
+    notabaja = nota;
+    sexobajo = sexo;
+    flag =1;
+}
+if (sexo == 'm' && nota >= 6) {
+        varones+=1;
+    }
+
 
 }
+promedio = acunotas / 5;
+alert("El promedio de notas fue: " + promedio + "\n" + 
+"La nota mas baja fue: " + notabaja + " de sexo " + sexobajo + "\n" +
+"La cantidad de varones aprobados fue: " + varones);
 }
