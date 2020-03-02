@@ -92,7 +92,12 @@ document.write("La cantidad de varones aprobados es: " + AprobadoV + ".</br>" +
 "El promedio de notas de los adolescentes es: " + promedioadolescentes + ".</br>" +
 "El promedio de nota de los mayores de edad es: " + promediomayores + ".</br>" +
 "El promedio de nota del sexo masculino es: " + promediomasculino + ".</br>" +
-"El promedio de nota del sexo femenino es: " + promediofemenino + ".</br>" +
-"El adolescente con nota mas alta es: " + nombrealto + " su nota fue " + notaalta + " y su sexo es " + sexoalto + '.');
+"El promedio de nota del sexo femenino es: " + promediofemenino + ".</br>" );
+if (contadolescentes == 0) {
+    document.write("No se registraron adoslescentes.");
+} else {
+    document.write("El adolescente con nota mas alta es: " + nombrealto + " su nota fue " + notaalta + " y su sexo es " + sexoalto + '.');
+}
+
 
 }
